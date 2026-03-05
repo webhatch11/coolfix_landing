@@ -1,0 +1,156 @@
+/* =========================
+   GLOBAL SECTION SPACING
+========================= */
+
+.section{
+padding:70px 6%;
+}
+
+
+/* =========================
+   MOBILE MENU (≤768px)
+========================= */
+
+@media(max-width:768px){
+
+/* NAVBAR */
+nav{
+position:absolute;
+top:70px;
+left:-100%;
+width:100%;
+background:#081426;
+flex-direction:column;
+text-align:center;
+padding:20px 0;
+transition:0.3s;
+}
+
+nav.active{
+left:0;
+display:flex;
+}
+
+nav a{
+display:block;
+margin:12px 0;
+}
+
+/* MENU TOGGLE */
+.menu-toggle{
+display:flex;
+flex-direction:column;
+gap:5px;
+cursor:pointer;
+}
+
+.menu-toggle span{
+width:25px;
+height:3px;
+background:var(--primary);
+}
+
+/* HERO TEXT */
+.home-content h1{
+font-size:28px;
+}
+
+/* HERO BUTTONS */
+.hero-buttons{
+flex-direction:column;
+}
+
+/* HERO FEATURES */
+.hero-features{
+flex-direction:column;
+gap:10px;
+}
+
+}
+
+
+/* =========================
+   TABLET DEVICES (≤900px)
+========================= */
+
+@media(max-width:900px){
+
+/* ABOUT SECTION */
+.about-container{
+flex-direction:column;
+text-align:center;
+}
+
+.about-wrapper{
+flex-direction:column;
+text-align:center;
+}
+
+.about-content{
+padding:30px;
+}
+
+.about-features{
+grid-template-columns:1fr;
+}
+
+}
+
+
+/* =========================
+   SMALL MOBILE (≤600px)
+========================= */
+
+@media(max-width:600px){
+
+.social-share{
+justify-content:center;
+text-align:center;
+}
+
+}
+
+
+/* =========================
+   VERY SMALL MOBILE (≤300px)
+========================= */
+
+@media(max-width:300px){
+
+.contact-container{
+flex-direction:column;
+}
+
+.contact-form{
+max-width:100%;
+justify-content:center;
+text-align:center;
+}
+
+.contact-stats{
+justify-content:center;
+}
+
+.contact-info{
+text-align:center;
+}
+
+}
+
+
+/* =========================
+   EXTRA SMALL DEVICES (≤200px)
+========================= */
+
+@media(max-width:200px){
+
+.footer{
+text-align:center;
+justify-content:center;
+}
+
+.footer-social a{
+margin:5px;
+}
+
+}
